@@ -1,0 +1,63 @@
+body {
+    font-family: Arial;
+}
+
+.contenedor {
+    max-width: 100%;
+    border: 1px solid rgb(177, 0, 0);
+    margin: 50px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.conjunto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+    perspective: 200px;
+}
+
+.cuadrado {
+    background-color: #7dc900;
+    width: 120px;
+    height: 120px;
+    margin: 15px;
+    transition: 300ms;
+}
+
+.texto {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contenedor:hover .positivo {
+    transform: translate(25px);
+}
+
+.contenedor:hover .negativo {
+    transform: translate(-25px);
+}
+
+.contenedor:hover .ejex {
+    transform: translateX(45px);
+}
+
+.contenedor:hover .ejey {
+    transform: translateY(-45px);
+}
+
+.contenedor:hover .ejexy {
+    transform: translate(-45px, 45px);
+}
+
+.contenedor:hover .ejez {
+    transform: translateZ(45px);
+}
+
+.contenedor:hover .simplificado {
+    transform: translate3d(15px, -15px, 50px);
+}
